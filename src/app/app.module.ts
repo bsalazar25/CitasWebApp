@@ -17,6 +17,8 @@ import { ComponentsModule } from './components/components.module';
 // Import guards
 import { AuthGuard } from './services/guards/auth-guards';
 
+
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -26,11 +28,13 @@ import { AuthGuard } from './services/guards/auth-guards';
     NgbModule,
     RouterModule,
     AppRoutingModule
+  
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
